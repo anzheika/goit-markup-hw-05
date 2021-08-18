@@ -52,7 +52,7 @@
       <section class="hero">
         <div class="hero-container container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button-text button">Заказать услугу</button>
+          <button type="button" class="button-text button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -94,12 +94,15 @@
           <ul class="whatdowedo-list">
             <li class="whatdowedo-list-item">
               <img src="images/img.jpg" width="370" alt="A person typying on the laptop" />
+              <p class="whatdowedo-overlay">Десктопные приложения</p>
             </li>
             <li class="whatdowedo-list-item">
               <img src="images/img2.jpg" width="370" alt="A preson looking up the phone" />
+              <p class="whatdowedo-overlay">Мобильные приложения</p>
             </li>
             <li class="whatdowedo-list-item">
               <img src="images/img3.jpg" width="370" alt="A tablet with a picture" />
+              <p class="whatdowedo-overlay">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -366,5 +369,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="cross-btn" width="11" height="11">
+            <use href="./images/icons.svg#icon-vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
